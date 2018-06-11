@@ -1,0 +1,10 @@
+let taskHandler = require('./taskHandler')
+let repository = require('./repository')
+
+repository.save('From main.js')
+repository.save('From main.js')
+repository.save('From main.js')
+taskHandler.save()
+taskHandler.save()
+taskHandler.save()
+taskHandler.save()
