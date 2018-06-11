@@ -1,7 +1,7 @@
 const Task = require('./task')
-const TaskRepository = require('./taskRepository')
+const taskRepository = require('./taskRepository')
 
-let task1 = new Task(TaskRepository.get(1))
+let task1 = new Task(taskRepository.get(1))
 let task2 = new Task({ name: 'create a demo for constructors'})
 let task3 = new Task({ name: 'create a demo for singletons'})
 let task4 = new Task({ name: 'create a demo for prototypes'})

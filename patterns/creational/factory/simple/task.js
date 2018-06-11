@@ -1,0 +1,19 @@
+'use strict'
+const simpleRepoFactory = require('./simpleRepoFactory')
+
+let Task = function(data) {
+	this.name = data.name
+	this.completed = false
+}
+
+Task.prototype.complete = function() {
+	console.log('completing task: ' + this.name)
+	this.completed = true;
+}
+
+Task.prototype.save = function() {
+  console.log('saving task: ' + this.name)
+  simpleRepoFactory.getRepo('task').save(this)
+}
+
+module.exports = Task
