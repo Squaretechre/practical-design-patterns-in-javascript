@@ -29,7 +29,7 @@ BurnedOutEmployee assigns a copy of the Employee prototype to it's own and then 
 
 ```js
 let BurnedOutEmployee = function(name, manager, averageHoursBeforeBurnout) {
-  this.name = name
+  Employee.call(this, name)
   this.manager = manager
   this.averageHoursBeforeBurnout = averageHoursBeforeBurnout
 }
