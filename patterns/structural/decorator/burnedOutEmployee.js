@@ -1,7 +1,7 @@
 const Employee = require('./employee')
 
 let BurnedOutEmployee = function(name, manager, averageHoursBeforeBurnout) {
-  this.name = name
+  Employee.call(this, name)
   this.manager = manager
   this.averageHoursBeforeBurnout = averageHoursBeforeBurnout
 }
