@@ -1,7 +1,7 @@
 
 # Facade Pattern
 
-## Used to provide a simplified interface to a complicated system.
+## Used to provide a simplified interface to a complicated system
 
 - Consolidate an existing API to a simplified call.
 - Not adding functionality.
